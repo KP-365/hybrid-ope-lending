@@ -121,11 +121,12 @@ Each decision below is there to stop the models learning from artefacts of how t
 The loading cells use compact data types to keep memory down, but the combined dataset is about 30 million rows, so a **high-RAM runtime** is safer.
 
 1. Open `cleaning/data_processing.ipynb` in Colab.
-2. Optional: set `OUT_DIR` in the settings cell to a Google Drive folder. The output files are too large to download reliably from the browser.
-3. Run all cells. The dataset is downloaded with `kagglehub`, which may ask for Kaggle credentials.
-4. Outputs are written to `OUT_DIR`:
+2. Run all cells. The dataset is downloaded with `kagglehub`, which may ask for Kaggle credentials. The settings cell asks for permission to connect your Google Drive.
+3. Outputs are saved to `MyDrive/hybrid-ope-lending/` on your Google Drive:
    - `lending_club_combined.parquet`: accepted + rejected, shared schema
    - `lending_club_outcome.parquet`: accepted loans with outcomes
+
+When run locally, outputs are saved to `data/` instead, which is ignored by git.
 
 ### Locally
 
