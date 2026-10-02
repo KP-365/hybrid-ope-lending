@@ -1,0 +1,8 @@
+# Pin exact versions once the environment is settled, e.g. from Colab: pip freeze | grep -iE "pandas|numpy|..."
+kagglehub==1.0.2
+pandas>=2.0
+numpy
+matplotlib
+seaborn
+pyarrow
+jupyter

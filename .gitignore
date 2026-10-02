@@ -1,0 +1,18 @@
+# data (never commit the LendingClub files or processed outputs)
+data/
+*.csv
+*.csv.gz
+*.parquet
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+
+# experiment tracking
+mlruns/
+wandb/
+
+# OS
+.DS_Store
