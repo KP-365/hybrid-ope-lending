@@ -118,7 +118,7 @@ Each decision below is there to stop the models learning from artefacts of how t
 
 ### Google Colab (recommended)
 
-The combined dataset is about 30 million rows, so a **high-RAM runtime** is needed.
+The loading cells use compact data types to keep memory down, but the combined dataset is about 30 million rows, so a **high-RAM runtime** is safer.
 
 1. Open `cleaning/data_processing.ipynb` in Colab.
 2. Optional: set `OUT_DIR` in the settings cell to a Google Drive folder. The output files are too large to download reliably from the browser.
